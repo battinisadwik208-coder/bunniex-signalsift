@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SignalSift explains whether a student opportunity message deserves trust, caution, or verification." />
+  <title>SignalSift — Verify the opportunity</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar"><div class="brand"><span class="brand-mark">S</span><span>SignalSift</span></div><span class="pill">Student safety toolkit</span></header>
+  <main class="shell">
+    <section class="hero"><div><p class="eyebrow">BEFORE YOU CLICK</p><h1>Verify the opportunity.<br><span>Protect your next step.</span></h1><p class="lede">Paste a scholarship, internship, course, or job message. SignalSift turns suspicious signals into clear actions without sending your private text anywhere.</p></div><div class="hero-note"><strong>Private by design</strong><br>Analysis happens in this browser. Never paste passwords, OTPs, or sensitive documents.</div></section>
+    <section class="grid">
+      <div class="card input-card"><div class="card-head"><div><p class="eyebrow">1 / INPUT</p><h2>What did you receive?</h2></div><button class="text-btn" id="clearBtn">Clear</button></div><label for="message">Message or opportunity description</label><textarea id="message" placeholder="Example: Congratulations! You have been selected for a guaranteed internship. Pay a refundable registration fee today and share your OTP..."></textarea><div class="field-row"><div class="field grow"><label for="url">Link (optional)</label><input id="url" type="url" placeholder="https://example.com/apply"></div><div class="field"><label for="channel">Received via</label><select id="channel"><option>WhatsApp / SMS</option><option>Email</option><option>Social media</option><option>Website</option><option>Not sure</option></select></div></div><div class="sample-row"><span>Try a sample:</span><button data-sample="scholarship">Scholarship fee</button><button data-sample="internship">Internship offer</button><button data-sample="safe">Official-looking notice</button></div><button class="primary" id="analyzeBtn"><span>Analyze signals</span><span>→</span></button></div>
+      <div class="card result-card" id="resultCard"><div class="empty-state" id="emptyState"><div class="empty-icon">⌁</div><h2>Your explanation will appear here</h2><p>SignalSift does not make a blind yes/no decision. It shows the signals, their weight, and the safest next action.</p></div><div id="result" class="hidden"></div></div>
+    </section>
+    <section class="lower-grid"><div class="card checklist"><p class="eyebrow">2 / SAFE CHECK</p><h2>Before you respond</h2><div class="check-row"><span>01</span><p>Find the opportunity on the organisation's official website instead of using the message link.</p></div><div class="check-row"><span>02</span><p>Never pay to unlock a scholarship, job, certificate, interview, or prize.</p></div><div class="check-row"><span>03</span><p>Never share an OTP, password, card number, or identity document in chat.</p></div><div class="check-row"><span>04</span><p>Ask a teacher, parent, or placement officer to review high-risk requests.</p></div></div><div class="card history"><div class="card-head"><div><p class="eyebrow">RECENT CHECKS</p><h2>Your local history</h2></div><button class="text-btn" id="clearHistory">Clear history</button></div><div id="historyList"><p class="muted">No checks yet. Your history stays on this device.</p></div></div></section>
+    <p class="disclaimer"><strong>Important:</strong> SignalSift is an educational safety aid, not a fraud investigation or legal service. A low score never proves a message is safe. When money, credentials, or identity documents are involved, verify through an independent official channel.</p>
+  </main><footer><span>SignalSift · BunnieX Hackathon 2026</span><span>Built for safer student opportunities</span></footer><script src="app.js"></script>
+</body></html>
